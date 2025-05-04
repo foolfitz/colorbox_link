@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains colorbox_link.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function colorbox_link_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the colorbox_link module.
+    case 'help.page.colorbox_link':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add a CKEditor button to make link open with colorbox') . '</p>';
+      return $output;
+
+    default:
+  }
+}
