@@ -44,7 +44,7 @@ class Colorboxlink extends CKEditorPluginBase {
   public function getFile() {
     // Make sure that the path to the plugin.js matches the file structure of
     // the CKEditor plugin you are implementing.
-    return drupal_get_path('module', 'colorbox_link') . '/js/plugins/colorboxlink/plugin.js';
+    return $this->getModulePath('colorbox_link') . '/js/plugins/colorboxlink/plugin.js';
   }
 
   /**
